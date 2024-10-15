@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="RTDExplorer.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="RTDExplorer.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <system.diagnostics>
+        <sources>
+            <!-- This section defines the logging configuration for My.Application.Log -->
+            <source name="DefaultSource" switchName="DefaultSwitch">
+                <listeners>
+                    <add name="FileLog"/>
+                    <!-- Uncomment the below section to write to the Application Event Log -->
+                    <!--<add name="EventLog"/>-->
+                </listeners>
+            </source>
+        </sources>
+        <switches>
+            <add name="DefaultSwitch" value="Information" />
+        </switches>
+        <sharedListeners>
+            <add name="FileLog"
+                 type="Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                 initializeData="FileLogWriter"/>
+            <!-- Uncomment the below section and replace APPLICATION_NAME with the name of your application to write to the Application Event Log -->
+            <!--<add name="EventLog" type="System.Diagnostics.EventLogTraceListener" initializeData="APPLICATION_NAME"/> -->
+        </sharedListeners>
+    </system.diagnostics>
+    <userSettings>
+        <RTDExplorer.My.MySettings>
+            <setting name="firmwarePath" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="crcchk" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="programchk" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="verifychk" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="eereadchk" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="comPort" serializeAs="String">
+                <value>COM3</value>
+            </setting>
+            <setting name="trColor" serializeAs="String">
+                <value>Red</value>
+            </setting>
+            <setting name="rtColor" serializeAs="String">
+                <value>Maroon</value>
+            </setting>
+            <setting name="crColor" serializeAs="String">
+                <value>Black</value>
+            </setting>
+            <setting name="cfColor" serializeAs="String">
+                <value>Blue</value>
+            </setting>
+            <setting name="hsColor" serializeAs="String">
+                <value>Green</value>
+            </setting>
+            <setting name="pwColor" serializeAs="String">
+                <value>Violet</value>
+            </setting>
+            <setting name="baColor" serializeAs="String">
+                <value>Cyan</value>
+            </setting>
+            <setting name="dbColor" serializeAs="String">
+                <value>Orange</value>
+            </setting>
+            <setting name="enableDebug" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="graphDebug" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="debugToTerminal" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="heatsinkTemp" serializeAs="String">
+                <value>1</value>
+            </setting>
+            <setting name="promptBeforeClosing" serializeAs="String">
+                <value>True</value>
+            </setting>
+        </RTDExplorer.My.MySettings>
+    </userSettings>
+    <applicationSettings>
+        <RTDExplorer.My.MySettings>
+            <setting name="avrBootPath" serializeAs="String">
+                <value>bootloader\avrboot.exe</value>
+            </setting>
+        </RTDExplorer.My.MySettings>
+    </applicationSettings>
+</configuration>

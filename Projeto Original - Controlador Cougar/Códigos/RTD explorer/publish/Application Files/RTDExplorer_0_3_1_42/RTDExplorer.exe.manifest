@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="0.3.1.42" name="RTDExplorer.exe" publicKeyToken="82a687a068c9fbd8" language="en" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="RTDExplorer" version="0.2.1.80" language="neutral" processorArchitecture="msil" />
+    <commandLine file="RTDExplorer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.Entity" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ICSharpCode.SharpZipLib.dll" size="192512">
+      <assemblyIdentity name="ICSharpCode.SharpZipLib" version="0.85.5.452" publicKeyToken="1B03E6ACF1164F73" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>1pnltGoU6k18BS5Bk/hfCk8rKes=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualBasic.PowerPacks.dll" size="352256">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>orIiHQmDw/JhX/65WCwPxERtreg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RTDExplorer.exe" size="165376">
+      <assemblyIdentity name="RTDExplorer" version="0.2.1.80" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>mAK8N+A3hgwgT6AUeUSX/ZMU1/k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SerialPortManager.dll" size="13824">
+      <assemblyIdentity name="SerialPortManager" version="0.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>HI4hGkL2UIUN+GMXNLLtgF5AcdY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="xml-update.dll" size="40448">
+      <assemblyIdentity name="xml-update" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>fiqcOgGvpWYZLmhvLADQ2ntXpvc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZedGraph.dll" size="307200">
+      <assemblyIdentity name="ZedGraph" version="5.1.1.428" publicKeyToken="02A83CBD123FCD60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>EIpWTYnSHixmf7uNfxYrUz0KgzU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="bootloader\avrboot.exe" size="47104">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>iwNNC1geTKvzdvYKmXnE6O+e+3k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="RTDExplorer.exe.config" size="4926">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>aQ4TMgmGqPvWNjhENE0vGYX5alI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=bobert5064-WIN7\bobert5064" issuerKeyHash="1ba53d2d28747412deb97e896c5dca1557aa3a86" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ByDJ04xE9+cY0+sW78q/eubRIrg=</DigestValue></Reference></SignedInfo><SignatureValue>2Ia80V7FIIG2GW+7XeTltN8sUTRX2B8YT/LhSTZeggp4YrTqXI1rQ0U3b984yny3RXkyUBuGS8FvDw1VT6TSpNDw1UNOaDG4RX1IjSkLux6Fs8nl35XJa1M75sWB4ApR1E4CjK8C96rrSgwttljSXArha2Hobchw8B7+V6+RuWY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>9o9t3TPcz770Cynt1PhYqYhroUFq/ctoL4H0s9tpWKbDGLL0gpHBG39AEw4TYL726o9/pn1w3pZrVMuQjk2oF9W3Jw5M3g4i9ow9V/hD/IT4dC2RZJuM5wfuMTUnUEVrb7IPEIKxBF5uMNW6LSe1CdRWuyluqQe8Kl1+Xoshq1M=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b822d1e67abfcaef16ebd318e7f7448cd3c92007" Description="" Url=""><as:assemblyIdentity version="0.3.1.42" name="RTDExplorer.exe" publicKeyToken="82a687a068c9fbd8" language="en" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=bobert5064-WIN7\bobert5064</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>2miK0aGdJnHnM881k5en00B5eSI=</DigestValue></Reference></SignedInfo><SignatureValue>3GA3MWVN9GlyjcTGLqvpOwPT6Ql44sCz+dY9pDpXLDgzA7nIvM5RbwNzx7RNjFkdj0p/NasmMUyZI7q428k7tNehfdGhZD5dESO0oFrmx1QzhLDqd8DtnmJbwHzWIj0yg6B1lwn4e0K2XMotGaU5k3TyMsgK7wL8iiZDuaH4sck=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>9o9t3TPcz770Cynt1PhYqYhroUFq/ctoL4H0s9tpWKbDGLL0gpHBG39AEw4TYL726o9/pn1w3pZrVMuQjk2oF9W3Jw5M3g4i9ow9V/hD/IT4dC2RZJuM5wfuMTUnUEVrb7IPEIKxBF5uMNW6LSe1CdRWuyluqQe8Kl1+Xoshq1M=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAWqgAwIBAgIQEH/d0j+s1oNPWZIqLRPsVzANBgkqhkiG9w0BAQUFADA/MT0wOwYDVQQDHjQAYgBvAGIAZQByAHQANQAwADYANAAtAFcASQBOADcAXABiAG8AYgBlAHIAdAA1ADAANgA0MB4XDTEwMDEyMzE4MDIzOVoXDTExMDEyNDAwMDIzOVowPzE9MDsGA1UEAx40AGIAbwBiAGUAcgB0ADUAMAA2ADQALQBXAEkATgA3AFwAYgBvAGIAZQByAHQANQAwADYANDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA9o9t3TPcz770Cynt1PhYqYhroUFq/ctoL4H0s9tpWKbDGLL0gpHBG39AEw4TYL726o9/pn1w3pZrVMuQjk2oF9W3Jw5M3g4i9ow9V/hD/IT4dC2RZJuM5wfuMTUnUEVrb7IPEIKxBF5uMNW6LSe1CdRWuyluqQe8Kl1+Xoshq1MCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBYjdBoZz9XWlQN6uVzYOi4SBxcdfFRM+s/EP6CH62NPug7GM54ZaQX7xeRtUkZ7Nj2K9EjJUE3JWh5YDUfkVwx20foLsnbSrS/m4S2GZOkuidm7kj8EFwAUwtNkniXQjispMDlZYfn4ucTkbt7JGMm2oZwtVK1L4OneTGi+HI9CA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
